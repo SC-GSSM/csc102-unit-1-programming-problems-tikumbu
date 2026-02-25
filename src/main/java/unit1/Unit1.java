@@ -6,6 +6,11 @@ public class Unit1 {
 	public static void main(String[] args) {
 		// Test your methods here by calling them and printing the results
 		System.out.println("Test methods here...");
+        System.out.println(addIntegers(2,3));
+        System.out.println(castDoubleToInt(2.3));
+        System.out.println(isTrue(4==5));
+        System.out.println(maxValueMinusOne());
+        System.out.println(multiplyIntAndDouble(3, 3.3));
 	}
  /**
   * Method 1: Returns the sum of two integers.
@@ -17,7 +22,7 @@ public class Unit1 {
   */
  public static int addIntegers(int a, int b) {
      // Your code here
-     return 0; // Placeholder return
+     return a+b;
  }
 
  /**
@@ -29,7 +34,8 @@ public class Unit1 {
   */
  public static int castDoubleToInt(double value) {
      // Your code here
-     return 0; // Placeholder return
+     return (int) value;
+     //return 0; // Placeholder return
  }
 
  /**
@@ -41,6 +47,9 @@ public class Unit1 {
   */
  public static boolean isTrue(boolean value) {
      // Your code here
+     if (value){
+        return true;
+     }
      return false; // Placeholder return
  }
 
@@ -52,7 +61,8 @@ public class Unit1 {
   */
  public static int maxValueMinusOne() {
      // Your code here
-     return 0; // Placeholder return
+     int x = Integer.MAX_VALUE-1;
+     return x; // Placeholder return
  }
 
  /**
@@ -65,6 +75,7 @@ public class Unit1 {
   */
  public static double multiplyIntAndDouble(int a, double b) {
      // Your code here
-     return 0.0; // Placeholder return
+     double x = (double) a * b;
+     return x; // Placeholder return
  }
 }
